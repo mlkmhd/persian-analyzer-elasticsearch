@@ -19,13 +19,15 @@ copy and unzip `target/releases/elasticsearch-analysis-farsi-{version}.zip` to `
 2.restart elasticsearch
 
 
-
 Quick Example
-
+-------
 1.create a index
+
 curl -XPUT http://localhost:9200/index
 
+
 2.create a mapping
+`
 curl -XPOST http://localhost:9200/index/fulltext/_mapping -d'
 {
     "fulltext": {
@@ -48,8 +50,12 @@ curl -XPOST http://localhost:9200/index/fulltext/_mapping -d'
         }
     }
 }'
-3.index some docs
+`
 
+
+3.index some docs
+`
 curl -XPOST http://localhost:9200/index/fulltext/1 -d'
 {"content":"سلام امروز هوا خیلی خوبه"}
 '
+`

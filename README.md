@@ -27,8 +27,8 @@ curl -XPUT http://localhost:9200/index
 
 
 2.create a mapping
-`
-curl -XPOST http://localhost:9200/index/fulltext/_mapping -d'
+
+`curl -XPOST http://localhost:9200/index/fulltext/_mapping -d'
 {
     "fulltext": {
              "_all": {
@@ -49,13 +49,11 @@ curl -XPOST http://localhost:9200/index/fulltext/_mapping -d'
             }
         }
     }
-}'
-`
+}'`
 
 
 3.index some docs
-`
-curl -XPOST http://localhost:9200/index/fulltext/1 -d'
+
+`curl -XPOST http://localhost:9200/index/fulltext/1 -d'
 {"content":"سلام امروز هوا خیلی خوبه"}
-'
-`
+'`

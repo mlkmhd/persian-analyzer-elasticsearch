@@ -16,7 +16,7 @@ Install
 
 copy and unzip `target/releases/elasticsearch-analysis-farsi-{version}.zip` to `your-es-root/plugins/farsi`
 
-2.restart elasticsearch
+3.restart elasticsearch
 
 
 Quick Example
@@ -24,7 +24,6 @@ Quick Example
 1.create a index
 
 curl -XPUT http://localhost:9200/index
-
 
 2.create a mapping
 

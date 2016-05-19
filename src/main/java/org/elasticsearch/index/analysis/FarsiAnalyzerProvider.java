@@ -6,7 +6,8 @@ import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.env.Environment;
 import org.elasticsearch.index.Index;
 import org.elasticsearch.index.settings.IndexSettingsService;
-import org.wltea.analyzer.lucene.FarsiAnalyzer;
+
+import ir.areka.analyzer.lucene.FarsiAnalyzer;
 
 public class FarsiAnalyzerProvider extends AbstractIndexAnalyzerProvider<FarsiAnalyzer> {
 	
